@@ -30,11 +30,19 @@ class RegistrationPage extends BasePage {
   }
 
   static get security() {
-    return cy.get('div[class="mat-form-field-outline ng-tns-c119-10 ng-star-inserted"]'); // not found
+    return cy.get('mat-select[aria-label="Selection list for the security question"]');
   }
 
   static get question() {
     return cy.get('span[class="mat-option-text"]').contains("Name of your favorite pet?");
+  }
+
+  static get answer() {
+    return cy.get('#securityAnswerControl');
+  }
+
+  static get register() {
+    return cy.get('#registerButton');
   }
 }
 
