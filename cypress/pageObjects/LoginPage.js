@@ -5,8 +5,28 @@ class LoginPage extends BasePage {
     return '/#/login';
   }
 
-  static get elementName(){
-    return cy.get('elementSelector');
+  static get account() {
+    return cy.get('#navbarAccount');
+  }
+
+  static get login() {
+    return cy.get('#navbarLoginButton');
+  }
+
+  static get email() {
+    return cy.get('#email');
+  }
+
+  static get password() {
+    return cy.get('#password');
+  }
+
+  static get loginButton() {
+    return cy.get('#loginButton');
+  }
+  
+  static get accountVali() {
+    return cy.get('button[aria-label="Go to user profile"]');
   }
 }
 
