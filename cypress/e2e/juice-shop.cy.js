@@ -37,7 +37,7 @@ describe("Juice-shop without auto login", () => {
     LoginPage.accountVali.should("contain.text", "demo");
   });
 
-  it("Registration", () => { // - unfinished
+  it("Registration", () => {
     // Click Account button
     RegistrationPage.account.click();
     // Login button
